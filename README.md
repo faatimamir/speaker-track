@@ -18,24 +18,21 @@ Install Dependencies: Run the installation cell provided in the notebook to set 
 Local Setup
 Clone the Repository
 
-bash
-Copy code
-git clone https://github.com/yourusername/your-repository.git
-cd your-repository
+
+  git clone https://github.com/faatimamir/speaker-track.git
+  cd speaker-track-main
 Create and Activate a Virtual Environment
 
-bash
-Copy code
-python -m venv venv
+
+  
+  python -m venv venv
 source venv/bin/activate # On Windows use `venv\Scripts\activate`
 Install Dependencies
 
 Install the dependencies manually or use the following commands:
 
-bash
-Copy code
-pip install wget text-unidecode torchaudio pytube
-pip install git+https://github.com/NVIDIA/NeMo.git@r2.0.0rc0#egg=nemo_toolkit[asr]
+  pip install wget text-unidecode torchaudio pytube
+  pip install git+https://github.com/NVIDIA/NeMo.git@r2.0.0rc0#egg=nemo_toolkit[asr]
 Ensure ffmpeg and sox are installed (usually handled by package managers like apt-get on Linux).
 
 Usage
