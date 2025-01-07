@@ -19,14 +19,19 @@ Local Setup
 Clone the Repository
 
 
-  git clone https://github.com/faatimamir/speaker-track.git
-  cd speaker-track-main
+    git clone https://github.com/faatimamir/speaker-track.git
+    
+    cd speaker-track-main
+  
 Create and Activate a Virtual Environment
 
 
   
   python -m venv venv
-source venv/bin/activate # On Windows use `venv\Scripts\activate`
+  
+source venv/bin/activate
+# On Windows use 
+`venv\Scripts\activate`
 Install Dependencies
 
 Install the dependencies manually or use the following commands:
