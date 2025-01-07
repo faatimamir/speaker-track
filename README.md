@@ -26,18 +26,19 @@ Clone the Repository
 Create and Activate a Virtual Environment
 
 
-  
-  python -m venv venv
+      
+      python -m venv venv
   
 source venv/bin/activate
 # On Windows use 
-`venv\Scripts\activate`
+    `venv\Scripts\activate`
 Install Dependencies
 
 Install the dependencies manually or use the following commands:
-
-  pip install wget text-unidecode torchaudio pytube
-  pip install git+https://github.com/NVIDIA/NeMo.git@r2.0.0rc0#egg=nemo_toolkit[asr]
+    
+      pip install wget text-unidecode torchaudio pytube
+      pip install git+https://github.com/NVIDIA/NeMo.git@r2.0.0rc0#egg=nemo_toolkit[asr]
+      
 Ensure ffmpeg and sox are installed (usually handled by package managers like apt-get on Linux).
 
 Usage
@@ -57,12 +58,12 @@ File Output: Segmented audio files will be saved in the output directory.
 Configuration
 Domain Type: Set DOMAIN_TYPE to either "meeting" or "telephonic" based on the type of audio file.
 Audio File Path: Update the audio_input_path variable to point to your audio file.
-Example
-python
-Copy code
-video_url = input("Enter the video URL: ")
-wav_file = video_to_wav(video_url)
+
+
+    video_url = input("Enter the video URL: ")
+    wav_file = video_to_wav(video_url)
 print(f"WAV file saved as: {wav_file}")
+
 Provide the path to an audio file or YouTube video URL, and the notebook will handle the rest, including downloading, converting, diarizing, and segmenting the audio.
 
 Troubleshooting
